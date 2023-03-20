@@ -1,0 +1,177 @@
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+// * {
+//   font-family: "Montserrat", sans-serif;
+// }
+.comments {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  flex-direction: column;
+  &__action {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: solid 1.5px #d9d9d9;
+    border-bottom: solid 1.5px #d9d9d9;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 50px;
+    &__item {
+      cursor: pointer;
+      display: flex;
+      margin-right: 70px;
+      align-items: center;
+    }
+  }
+  &__container {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__commentTitle {
+      height: 24px;
+      left: 0px;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      color: #595959;
+    }
+    &__inputComment {
+      margin-top: 35px;
+
+      display: flex;
+      align-items: center;
+      width: 100%;
+      &__avartar {
+        margin-right: 5px;
+        border-radius: 50%;
+      }
+      &__inputText {
+        background-color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__wrapComment {
+      height: auto;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &__contentComment {
+        margin-left: 11px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        &__inforUser {
+          display: flex;
+          width: 100%;
+          &__avatar {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: auto;
+            margin-right: 15px;
+          }
+          &__userInfor {
+            margin-left: 8px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__name {
+              font-size: 14px;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 600;
+              color: #595959;
+            }
+            &__title {
+              color: #8c8c8c;
+              font-size: 12px;
+              font-weight: normal;
+            }
+          }
+        }
+        &__contentCommentBackground {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-left: 56px;
+          margin-top: 5px;
+          background: #f5f6f8;
+          border-radius: 0px 20px 0px 20px;
+          &__content {
+            :global {
+              .ck-sticky-panel__content {
+                display: none !important;
+              }
+              .ck-editor__editable {
+                background-color: #f5f6f8 !important;
+                border: none !important;
+              }
+            }
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            color: #262626;
+            line-height: 22px;
+            margin: 13px 0px 13px 28px;
+            width: 92%;
+          }
+          &__reply {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            margin-right: 15px;
+          }
+          &__Icon {
+            margin-right: 15px;
+            font-size: 21px;
+          }
+        }
+      }
+    }
+  }
+  :global {
+    .ant-popover-title {
+      display: none !important;
+    }
+    .ant-mentions {
+      border-radius: 20px !important;
+
+      min-height: 35px !important;
+    }
+  }
+}
+
+:global {
+  .ant-popover-title {
+    display: none !important;
+  }
+}
+.ckeditor {
+  :global {
+    .ck-editor__editable {
+      width: 100%;
+    }
+  }
+}
+.ckeditorOnlyView {
+  :global {
+    .ck-sticky-panel__content {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,173 @@
+.container {
+  background-color: #eaefec;
+  padding: 50px 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #605c5c;
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    &__item {
+      cursor: pointer;
+      width: 270px;
+      height: 60px;
+      font-size: 20px;
+      border-radius: 10px;
+      text-align: center;
+      margin-right: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: 600;
+      transition: height 0.5s;
+      &:hover {
+        height: 70px;
+      }
+    }
+  }
+}
+.examPracticeItem {
+  padding: 15px !important;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 0 10px 0 0;
+  overflow: hidden;
+  display: flex;
+  margin-top: 20px;
+  &__img {
+    border-right: 1px solid #ccc;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__infor {
+    margin-left: 20px;
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &__title {
+      font-weight: 600;
+      font-size: 15px;
+      width: 100px;
+
+      line-height: 1.7;
+      margin: 0 0 2px;
+    }
+    &__des {
+      font-size: 14px;
+      text-transform: uppercase;
+      line-height: 1.7;
+    }
+    &__a {
+      color: #e9ab17;
+      margin-right: 10px;
+    }
+    &__btns {
+      display: flex;
+      &__button {
+        display: inline-block;
+        padding: 5px 10px;
+        min-width: 70px;
+        font-size: 12px;
+        font-family: roboto-bold;
+
+        border-radius: 20px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.examPracticeItemExpand {
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 0 10px 0 0;
+  overflow: hidden;
+}
+.examShortExam {
+  cursor: pointer;
+  border-radius: 50px;
+  transition: box-shadow 0.2s linear;
+  padding: 10px;
+  background-color: #fff;
+  width: fit-content;
+  display: flex;
+  &__calendar {
+    margin-left: 15px;
+    position: relative;
+    width: 54px;
+    height: 61px;
+    background: url(https://firebasestorage.googleapis.com/v0/b/toeic-project.appspot.com/o/CommonDoc%2FExam%2FPart1%2Fcalendar.webp?alt=media&token=9df4ee5e-06eb-44cb-beed-48a17f96a19d)
+      no-repeat;
+    background-size: cover;
+    &__year {
+      position: absolute;
+      font-weight: 400;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      color: #fff;
+      top: 4px;
+    }
+    &__month {
+      position: absolute;
+      font-family: roboto-bold;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #666;
+      font-size: 14px;
+      top: 42px;
+      font-weight: 600;
+    }
+    &__date {
+      font-weight: 600;
+      position: absolute;
+      font-family: roboto-bold;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 20px;
+      top: 20px;
+      color: #666;
+    }
+  }
+  &__content {
+    margin-right: 15px;
+    padding: 6px 0 0 15px;
+    position: relative;
+    &__infor {
+      display: block;
+      padding: 3px 25px 3px 12px;
+      min-width: 111px;
+      background-color: #e9ab17;
+      color: #fff;
+      font-size: 15px;
+
+      border-radius: 40px;
+      font-weight: 700;
+    }
+    &__inforTime {
+      font-weight: 700;
+      display: block;
+      padding: 3px 25px 3px 12px;
+      min-width: 111px;
+      background-color: #e9ab17;
+      color: #fff;
+      font-size: 15px;
+
+      border-radius: 40px;
+      background-color: #7bd7b1;
+      margin-top: 3px;
+    }
+  }
+}
